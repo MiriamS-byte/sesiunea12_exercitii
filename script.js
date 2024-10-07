@@ -18,12 +18,12 @@ console.log(computeSum(22,35));
 
 function isEven(myNumber){
     if(myNumber % 2 !== 0){
-        console.log(`${myNumber} is not Even`);
-    } else {
-        console.log(`${myNumber} is Even`);
+        return true;
     }
+    return false;
 };
-isEven(12);
+console.log(isEven(12));
+console.log(isEven(13));
 
 function isOdd(checkedNumber){
     let oddNumber = true;
