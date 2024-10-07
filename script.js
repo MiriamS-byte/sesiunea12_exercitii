@@ -36,10 +36,17 @@ console.log(isOdd(14));
 console.log(isOdd(13));
 
 /**
- * Concatenarea Șirurilor:
+ * Concatenarea Șirurilor de caractere:
  * Creează o funcție numită concatenateStrings care primește 
  * două șiruri și le concatenează, returnând rezultatul.
  */
+
+function concatenateStrings(string1, string2){
+    return string1 + string2;
+}
+const result = concatenateStrings("Alabala", "Portocala");
+console.log(result);
+
 
 /**
  * Verificarea Palindromului:
