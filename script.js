@@ -2,18 +2,38 @@
  * Calcularea Sumelor:
  * Definește o funcție numită computeSum care 
  * primește doi parametri și returnează suma acestora.
+ * @param {number} a
+ * @param {number} b  
  */
 
 function computeSum(a,b){
-    const sum = a + b;
-    console.log(`computed sum from ${a} and ${b} is ${sum}`)
-}
+    return a + b; }
+console.log(computeSum(22,35));
 
 /**
  * Determinarea Parității:
  * Scrie o funcție numită isEven care primește un număr 
  * și returnează true dacă numărul este par și false dacă este impar
  */
+
+function isEven(myNumber){
+    if(myNumber % 2 !== 0){
+        console.log(`${myNumber} is not Even`);
+    } else {
+        console.log(`${myNumber} is Even`);
+    }
+};
+isEven(12);
+
+function isOdd(checkedNumber){
+    let oddNumber = true;
+    if(checkedNumber % 2 == 0) {
+        oddNumber = false;
+    }         
+    return oddNumber;
+}
+console.log(isOdd(14));
+console.log(isOdd(13));
 
 /**
  * Concatenarea Șirurilor:
